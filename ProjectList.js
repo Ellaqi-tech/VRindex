@@ -101,7 +101,7 @@ class ProjectList extends React.Component {
             </View>
 
             <View style={{alignItems: 'center',justifyContent: 'center',}}>
-                <Text style={styles.projectText}>Click on project picture to visit site</Text>
+                <Text style={styles.projectText0}>click on project picture to visit site</Text>
             </View>
           </View>
         </View>
@@ -139,6 +139,12 @@ leftpanel: {
       textAlign: 'center',
       color: '#caf0f8',
       fontWeight: 'bold',
+    },
+    projectText0: {
+    fontSize: 30,
+    textAlign: 'center',
+    color: '#5390d9',
+    fontWeight: 'bold',
     },
     projectFlexBox: {
       flex:1,
