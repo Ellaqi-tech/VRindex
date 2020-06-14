@@ -18,13 +18,10 @@ class AboutMe extends React.Component {
             <Text style={styles.righttext}>Ella C. Qi is a web developer, designer, painter with a background in design and communication engineering. She is passionate about designing beautiful websites' visual effects and targeted in creating functional and creative websites. It is proud that she is doing the work she dreamed of when she was eight years old. 
               {"\n"} &nbsp;Contact her by
             </Text>
-
             <View style={styles.greetingBox}>
                 <Image style={styles.greetingbg}
                 source={require('./static_assets/ella.png')} />
             </View> 
-            
-            {/* <VrButton style={styles.rightbutton} onClick={e =>{NativeModules.LinkingManager.openURL('https://ellaqi.com/contact-me/')}}></VrButton> */}
             <View style={{paddingTop: 15, paddingLeft: 50, paddingBottom: 30}}>
               <VrButton style={styles.rightbutton} onClick={e =>{NativeModules.CustomLinkModule.openInNewTab('me@ellaqi.com')}}>
                 <Text style={styles.righttextlink}>me@ellaqi.com (email)</Text>
@@ -36,10 +33,8 @@ class AboutMe extends React.Component {
                 <Text style={styles.righttextlink}>GitHub</Text>
               </VrButton>
             </View>
-  
             <Text style={styles.rightSmallText}>She is not very busy lately, especially during the quarantine. So just contact her.</Text>
-            <Text style={styles.righttext}>Click on contact links to contact your next developer/designer</Text>
-            
+            <Text style={styles.righttext}>Click on contact links to contact your next developer/designer</Text> 
           </View>
         </View>
       );

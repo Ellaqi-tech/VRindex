@@ -1,10 +1,7 @@
-// This file contains the boilerplate to execute your React app.
-// If you want to modify your application's content, start in "index.js"
 import {ReactInstance, Surface, Location} from 'react-360-web';
 import {Module} from 'react-360-web';
 
 function init(bundle, parent, options = {}) {
-
   class CustomLinkModule extends Module {
     constructor() {
       super('CustomLinkModule'); // Makes this module available at NativeModules.MyModule
@@ -14,19 +11,13 @@ function init(bundle, parent, options = {}) {
     }
   };
 
-
-
   class ProjectPanelModule extends Module {
     constructor() {
       super('ProjectPanelModule');
     }
     showProjectIntroPanel() {
-
     }
   }
-
-
-
 
   const r360 = new ReactInstance(bundle, parent, {
     // Add custom options here
@@ -40,29 +31,6 @@ function init(bundle, parent, options = {}) {
     ...options,
   });
 
-
-
-
-// const r360 = new ReactInstance(bundle, parent, {
-//   // Add custom options here
-//   fullScreen: true,
-//   ...options,
-// }
-// );
-
-   //NativeModules:
-  // Register custom modules at init time
-//   const r360Module = new ReactInstance(
-//     'VRindex.bundle?platform=vr',
-//     document.getElementById('container'), {
-//     nativeModules: [
-//       new CustomLinkModule(),
-//     ]
-//   }
-// );
-
-
-  //left panel
   const leftPanel = new Surface(
     3700,
     700,
@@ -74,7 +42,6 @@ function init(bundle, parent, options = {}) {
     leftPanel,
   );
   
-  //right panel
   const rightPanel = new Surface(
     1000,
     800,
@@ -86,22 +53,18 @@ function init(bundle, parent, options = {}) {
     rightPanel,
   )
 
-    //projects intro panels
-    const projectIntroPanel = new Surface(
-      750,
-      500,
-      Surface.SurfaceShape.Flat
-    );
-    projectIntroPanel.setAngle(-3,-0.13);
-    r360.renderToSurface(
-      r360.createRoot('ProjectIntro'),
-      projectIntroPanel,
-    )
+  //projects intro panels
+  const projectIntroPanel = new Surface(
+    750,
+    500,
+    Surface.SurfaceShape.Flat
+  );
+  projectIntroPanel.setAngle(-3,-0.13);
+  r360.renderToSurface(
+    r360.createRoot('ProjectIntro'),
+    projectIntroPanel,
+  )
 
-
-
-
-  // Render your app content to the default cylinder surface
   r360.renderToSurface(
     r360.createRoot('GreetingPanel', { /* initial props */ }),
     r360.getDefaultSurface()

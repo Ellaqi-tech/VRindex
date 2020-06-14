@@ -95,7 +95,6 @@ class ProjectIntro extends React.Component {
       top: 250,
       padding: 10,
       zIndex: 1,
-      //backgroundColor: '#000000',
     },
     greetingtext: {
       fontSize:45,

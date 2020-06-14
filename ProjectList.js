@@ -10,25 +10,18 @@ const {CustomLinkModule} = NativeModules.LinkingManager;
 //left surface
 class ProjectList extends React.Component {
     showIntroPanel() {
-      
     }
     render() {
       return (
         <View style={styles.leftpanel}>
           <View style={styles.lcontainer}>
-  
-            {/* <View style={styles.labelView}>
-              <Text style={styles.labelText}>Personal Projects</Text>
-            </View> */}
-  
             {/* flex container for each row */}
             <View style={styles.projectFlexBox}>
               {/* box for each project */}
               <AmbientLight intensity={1.0} color={'#ffffff'} />
           <PointLight
             intensity={0.8}
-            style={{transform: [{translate: [0, 4, -1]}]}}
-          />
+            style={{transform: [{translate: [0, 4, -1]}]}} />
               <View style={styles.projectFlexCol}>
                 <VrButton onClick={e =>{NativeModules.CustomLinkModule.openInNewTab('https://qeclock.ellaqi.com/')}}>
                   <View style={styles.projectImgView}>
@@ -67,11 +60,6 @@ class ProjectList extends React.Component {
                   </View>
                 </View>
              </View>
-  
-            {/* <View style={styles.labelView}>
-              <Text style={styles.labelText}>Team Projects</Text>
-            </View> */}
-  
             {/* flex container for each row */}
             <View style={styles.projectFlexBox}>
   
@@ -111,18 +99,17 @@ class ProjectList extends React.Component {
                 </View>
               </View>
             </View>
-          
+
             <View style={{alignItems: 'center',justifyContent: 'center',}}>
                 <Text style={styles.projectText}>Click on project picture to visit site</Text>
             </View>
-
           </View>
         </View>
       );
     }
   };
 
-  const styles = StyleSheet.create({
+const styles = StyleSheet.create({
 //left panel
 leftpanel: {
     width: 1400,
@@ -168,15 +155,6 @@ leftpanel: {
       alignItems: 'center',
       justifyContent: 'center',
     },
-    // labelView: {
-    //   width: 1080,
-    //   alignItems: 'center',
-    //   justifyContent: 'center',
-    // },
-    // labelText: {
-    //   fontWeight: 'bold',
-    //   fontSize: 24,
-    // }
   });
 
 const ConnectedProjectList= connect (ProjectList);

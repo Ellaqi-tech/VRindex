@@ -3,7 +3,6 @@ import {StyleSheet,Text,View,VrButton,Image} from 'react-360';
 import {NativeModules} from 'react-360';
 import AmbientLight from 'AmbientLight';
 import PointLight from 'PointLight';
-//import { LinearTextGradient } from "react-native-text-gradient";
 import {connect, setCurrent} from './Store';
 //native modules
 const {CustomLinkModule} = NativeModules.LinkingManager;
@@ -20,10 +19,6 @@ class GreetingPanel extends React.Component {
           intensity={0.8}
           style={{transform: [{translate: [0, 4, -1]}]}}
         />
-        {/* <View style={styles.greetingBox}>
-          <Image style={styles.greetingbg}
-            source={require('./static_assets/greeting-bg.jpg')} />
-        </View> */}
         {/* arrow icons */}
         <View style={styles.greetingIconContainerLeft}>
           <Image style={styles.iconimg}
@@ -35,10 +30,6 @@ class GreetingPanel extends React.Component {
         </View>
 
         <View style={styles.greetingtextContainer}>
-
-
-    {/* <Text style={styles.greetingtext3}></Text> */}
-    
           <Text style={styles.greetingtextBlock1}>
             <Text style={styles.greetingtext5}>Good&nbsp;</Text>
             <Text style={styles.greetingtext4}>designs</Text>
@@ -50,7 +41,6 @@ class GreetingPanel extends React.Component {
             <Text style={styles.greetingtext1}>beautiful</Text>
           </Text>
           </View>
-          
         </View>
 
         <View style={{paddingTop: 70,justifyContent: 'center', alignItems: 'center',}}>
@@ -59,11 +49,9 @@ class GreetingPanel extends React.Component {
         </View>
         <VrButton style={styles.backlink} onClick={e =>{NativeModules.CustomLinkModule.openInNewTab('https://ellaqi.com/')}}>
           <View style={styles.linkView}>
-            <Text style={styles.backLinkText}>Click to back to flat world</Text>
+            <Text style={styles.backLinkText}>Click here to back to flat world</Text>
           </View>
         </VrButton>
-
-
       </View>
     );
   }
@@ -101,9 +89,6 @@ const styles = StyleSheet.create({
       zIndex: -1,
     },
     backlink: {
-    //   borderColor: '#001c55',
-    //   borderWidth: 1,
-    //   backgroundColor: 'rgba(0, 7, 45, 0.65)',
       position: 'absolute',
       top: 490,
       padding: 5,
@@ -172,48 +157,47 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         padding: 10,
         fontFamily: 'Roboto',
-      },
-      greetingtext2: {
-        textAlign: 'center',
-        color: '#5390d9',
-        zIndex: 1,
-        fontWeight: 'bold',
-        padding: 10,
-        fontFamily: 'Roboto',
-      },
-      greetingtext3: {
-        textAlign: 'center',
-        color: '#4ea8de',
-        zIndex: 1,
-        fontWeight: 'bold',
-        padding: 10,
-        fontFamily: 'Roboto',
-      },
-      greetingtext4: {
-        textAlign: 'center',
-        color: '#48bfe3',
-        zIndex: 1,
-        fontWeight: 'bold',
-        padding: 10,
-        fontFamily: 'Roboto',
-      },
-      greetingtext5: {
-        textAlign: 'center',
-        color: '#56cfe1',
-        zIndex: 1,
-        fontWeight: 'bold',
-        padding: 10,
-        fontFamily: 'Roboto',
-      },
-      greetingtext6: {
-        fontSize:60,
-        textAlign: 'center',
-        color: '#0096C7',
-        zIndex: 1,
-        fontWeight: 'bold',
-        padding: 10,
-      },
-
+    },
+    greetingtext2: {
+    textAlign: 'center',
+    color: '#5390d9',
+    zIndex: 1,
+    fontWeight: 'bold',
+    padding: 10,
+    fontFamily: 'Roboto',
+    },
+    greetingtext3: {
+    textAlign: 'center',
+    color: '#4ea8de',
+    zIndex: 1,
+    fontWeight: 'bold',
+    padding: 10,
+    fontFamily: 'Roboto',
+    },
+    greetingtext4: {
+    textAlign: 'center',
+    color: '#48bfe3',
+    zIndex: 1,
+    fontWeight: 'bold',
+    padding: 10,
+    fontFamily: 'Roboto',
+    },
+    greetingtext5: {
+    textAlign: 'center',
+    color: '#56cfe1',
+    zIndex: 1,
+    fontWeight: 'bold',
+    padding: 10,
+    fontFamily: 'Roboto',
+    },
+    greetingtext6: {
+    fontSize:60,
+    textAlign: 'center',
+    color: '#0096C7',
+    zIndex: 1,
+    fontWeight: 'bold',
+    padding: 10,
+    },
     greetingBox: {
       position: 'absolute',
       top: 0,
@@ -222,12 +206,12 @@ const styles = StyleSheet.create({
       margin: 0,
       zIndex: -1,
     },
-   greetingIconContainerLeft: {
+    greetingIconContainerLeft: {
     position: 'absolute',
     top: 380,
     left: 150,
    },
-   greetingIconContainerRight: {
+    greetingIconContainerRight: {
     position: 'absolute',
     top: 430,
     right: 150,
