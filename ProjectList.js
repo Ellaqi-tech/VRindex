@@ -141,9 +141,9 @@ leftpanel: {
       fontWeight: 'bold',
     },
     projectText0: {
-    fontSize: 30,
+    fontSize: 40,
     textAlign: 'center',
-    color: '#5390d9',
+    color: '#56cfe1',
     fontWeight: 'bold',
     },
     projectFlexBox: {

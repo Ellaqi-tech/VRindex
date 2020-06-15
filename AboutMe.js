@@ -12,7 +12,7 @@ class AboutMe extends React.Component {
       return (
         <View style={styles.rightpanel} >
           <View style={styles.rcontainer} >
-            <View>
+            <View style={{padding: 15,}}>
               <Text style={styles.righttitle}>Who is Ella</Text>
             </View>
             <Text style={styles.righttext}>Ella C. Qi is a web developer, designer, painter with a background in design and communication engineering. She is passionate about designing beautiful websites' visual effects and targeted in creating functional and creative websites. It is proud that she is doing the work she dreamed of when she was eight years old. 
@@ -47,35 +47,37 @@ class AboutMe extends React.Component {
         width: 420,
         height: 450,
         position: 'absolute',
-        top:-100,
-        left:480,
+        top:-90,
+        left:550,
         right:0,
         bottom:0,
-        opacity: 0.65,
+        opacity: 0.55,
         zIndex: -1,
       },
     rightbutton: {
-      width:300,
-      height: 30,
-      padding: 9,
+      width:500,
+      height: 35,
+      paddingTop: 5,
+      paddingLeft: 100,
     },
     righttext: {
       fontSize: 26,
-      color: '#FFFFFF',
+      color: '#caf0f8',
       lineHeight: 60,
       fontWeight: 'bold',
     },
     righttextlink: {
       textDecorationLine: 'underline',
       fontSize: 26,
-      color: '#FFFFFF',
+      color: '#48bfe3',
       lineHeight: 60,
       fontWeight: 'bold',
     },
     righttitle: {
       fontSize: 60,
-      color: 'white',
+      color: '#56cfe1',
       textAlign: 'center',
+      fontWeight: 'bold',
     },
     rightVtitle: {
       width: 1000,
@@ -99,7 +101,7 @@ class AboutMe extends React.Component {
       paddingTop: 150,
     },
     rcontainer: {
-      width: 800,
+      width: 1000,
       height: 700,
       padding: 20,
     },

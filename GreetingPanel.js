@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {StyleSheet,Text,View,VrButton,Image} from 'react-360';
+//import PageLoad from './app/pageload';
 import {NativeModules} from 'react-360';
 import AmbientLight from 'AmbientLight';
 import PointLight from 'PointLight';
@@ -9,16 +10,18 @@ const {CustomLinkModule} = NativeModules.LinkingManager;
 
 //greeting surface
 class GreetingPanel extends React.Component {
+    // state = {
+    //     loaded: false
+    // }
+    // constructor() {
+    //     super();
+    //     PageLoad.load(v => this.setState({loaded: true}));
+    // }
+
   render() {
     return (
       // greeting panel      
       <View style={styles.panel}>
-        {/* background image */}
-        <AmbientLight intensity={1.0} color={'#ffffff'} />
-        <PointLight
-          intensity={0.8}
-          style={{transform: [{translate: [0, 4, -1]}]}}
-        />
         {/* arrow icons */}
         <View style={styles.greetingIconContainerLeft}>
           <Image style={styles.iconimg}
@@ -32,13 +35,13 @@ class GreetingPanel extends React.Component {
         <View style={styles.greetingtextContainer}>
           <Text style={styles.greetingtextBlock1}>
             <Text style={styles.greetingtext5}>Good&nbsp;</Text>
-            <Text style={styles.greetingtext4}>designs</Text>
+            <Text style={styles.greetingtext4}>Designs</Text>
           </Text>
           <View style={{position:'absolute', width: 850, top: 150,}}>
           <Text style={styles.greetingtextBlock2}>
-            <Text style={styles.greetingtext3}>not&nbsp;</Text>
-            <Text style={styles.greetingtext2}>just&nbsp;</Text>
-            <Text style={styles.greetingtext1}>beautiful</Text>
+            <Text style={styles.greetingtext3}>Not&nbsp;</Text>
+            <Text style={styles.greetingtext2}>Just&nbsp;</Text>
+            <Text style={styles.greetingtext1}>Beautiful</Text>
           </Text>
           </View>
         </View>
@@ -49,7 +52,7 @@ class GreetingPanel extends React.Component {
         </View>
         <VrButton style={styles.backlink} onClick={e =>{NativeModules.CustomLinkModule.openInNewTab('https://ellaqi.com/')}}>
           <View style={styles.linkView}>
-            <Text style={styles.backLinkText}>Click here to back to flat world</Text>
+            <Text style={styles.backLinkText}>click here to back to flat world</Text>
           </View>
         </VrButton>
       </View>
