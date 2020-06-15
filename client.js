@@ -71,8 +71,8 @@ function init(bundle, parent, options = {}) {
   );
 
   // Load the initial environment
-  r360.compositor.setBackground(r360.getAssetURL('././vrbg5.jpg',{ format: '2D', } //specify the layout of the background image with a second options argument.
-  ));
+  r360.compositor.setBackground('./static_assets/vrbg5.jpg'); //specify the layout of the background image with a second options argument.
+  
   
 }
 
