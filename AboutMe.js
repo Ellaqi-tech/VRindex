@@ -51,7 +51,7 @@ class AboutMe extends React.Component {
         left:550,
         right:0,
         bottom:0,
-        opacity: 0.55,
+        opacity: 0.45,
         zIndex: -1,
       },
     rightbutton: {
@@ -75,9 +75,9 @@ class AboutMe extends React.Component {
     },
     righttitle: {
       fontSize: 60,
-      color: '#56cfe1',
+      color: '#caf0f8',
       textAlign: 'center',
-      fontWeight: 'bold',
+      fontWeight: '400',
     },
     rightVtitle: {
       width: 1000,

@@ -34,14 +34,14 @@ class GreetingPanel extends React.Component {
 
         <View style={styles.greetingtextContainer}>
           <Text style={styles.greetingtextBlock1}>
-            <Text style={styles.greetingtext5}>Good&nbsp;</Text>
-            <Text style={styles.greetingtext4}>Designs</Text>
+            <Text style={styles.greetingtext2}>Good&nbsp;</Text>
+            <Text style={styles.greetingtext3}>Designs</Text>
           </Text>
-          <View style={{position:'absolute', width: 850, top: 150,}}>
+          <View style={{position:'absolute', width: 570, top: 150,}}>
           <Text style={styles.greetingtextBlock2}>
-            <Text style={styles.greetingtext3}>Not&nbsp;</Text>
+            <Text style={styles.greetingtext2}>Not&nbsp;</Text>
             <Text style={styles.greetingtext2}>Just&nbsp;</Text>
-            <Text style={styles.greetingtext1}>Beautiful</Text>
+            <Text style={styles.greetingtext3}>Beautiful</Text>
           </Text>
           </View>
         </View>
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
       resizeMode: "cover",
       width: 40,
       height: 40,
-      opacity: 0.90,
+      opacity: 0.75,
       margin: 10,
     },
     backLinkText: {
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
       left:0,
       right:0,
       bottom:0,
-      opacity: 0.75,
+      opacity: 0.80,
       zIndex: -1,
     },
     backlink: {
@@ -139,14 +139,14 @@ const styles = StyleSheet.create({
       padding: 0,
     },
     greetingtextBlock1: {
-        fontSize:150,
-        textAlign: 'center',
+        fontSize:100,
+        textAlign: 'left',
         zIndex: 1,
         fontWeight: '400',
         padding: 0,
     },
     greetingtextBlock2: {
-        fontSize:90,
+        fontSize:60,
         textAlign: 'center',
         zIndex: 1,
         fontWeight: '400',
@@ -156,6 +156,7 @@ const styles = StyleSheet.create({
     greetingtext1: {
         textAlign: 'center',
         color: '#5e60ce',
+        // color: '#c0c0c0',
         zIndex: 1,
         fontWeight: 'bold',
         padding: 10,
@@ -179,7 +180,8 @@ const styles = StyleSheet.create({
     },
     greetingtext4: {
     textAlign: 'center',
-    color: '#48bfe3',
+    //color: '#48bfe3',
+    color: '#c0c0c0',
     zIndex: 1,
     fontWeight: 'bold',
     padding: 10,
@@ -187,7 +189,8 @@ const styles = StyleSheet.create({
     },
     greetingtext5: {
     textAlign: 'center',
-    color: '#56cfe1',
+    //color: '#56cfe1',
+    color: '#FFFFFF',
     zIndex: 1,
     fontWeight: 'bold',
     padding: 10,

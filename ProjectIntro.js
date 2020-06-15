@@ -11,10 +11,16 @@ const {CustomLinkModule} = NativeModules.LinkingManager;
 class ProjectIntro extends React.Component {
     render() {
       return(
-        <View style={{borderColor:'red', borderWidth: 2, backgroundColor: 'green', opacity:0,}}>
+        <View>
           <View style={styles.greetingBox}>
             <Image style={styles.greetingbg}
               source={require('./static_assets/greeting-bg.jpg')} />
+          </View>
+          <View style={styles.introTextView}>
+            <Text style={styles.introText}>
+              This VR website has four surfaces, including two cylinder surface, two flat surfaces, gallery function and used VrButton to achieve user interaction with external links.
+            </Text>
+            <Text style={styles.introText}>Built with React 360</Text>
           </View>
           <VrButton style={styles.backlink} onClick={e =>{NativeModules.CustomLinkModule.openInNewTab('https://ellaqi.com/')}}>
             <View style={styles.linkView}>
@@ -27,11 +33,13 @@ class ProjectIntro extends React.Component {
   };
 
   const styles = StyleSheet.create({
-    iconimg: {
-      resizeMode: "cover",
-      width: 40,
-      height: 40,
-      opacity: 0.90,
+    introTextView:{
+      width: 700,
+      padding:100,
+    },
+    introText: {
+      fontSize: 24,
+      padding: 15,
     },
     backLinkText: {
       color: '#FFFFFF',
@@ -48,7 +56,7 @@ class ProjectIntro extends React.Component {
       left:0,
       right:0,
       bottom:0,
-      opacity: 0.75,
+      opacity: 0.6,
       zIndex: -1,
     },
     backlink: {
