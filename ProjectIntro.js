@@ -18,7 +18,7 @@ class ProjectIntro extends React.Component {
           </View>
           <View style={styles.introTextView}>
             <Text style={styles.introText}>
-              This VR website has four surfaces, including two cylinder surface, two flat surfaces, gallery function and used VrButton to achieve user interaction with external links.
+              This VR website has six surfaces, including two cylinder surface, four flat surfaces, gallery function and used VrButton to achieve user interaction with external links.
             </Text>
             <Text style={styles.introText}>Built with React 360</Text>
             <Text style={styles.introTextJoke}>Note: please do not peek at the bottom or top.</Text>
