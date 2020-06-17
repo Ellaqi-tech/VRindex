@@ -51,7 +51,7 @@ class AboutMe extends React.Component {
         left:550,
         right:0,
         bottom:0,
-        opacity: 0.45,
+        opacity: 0.6,
         zIndex: -1,
       },
     rightbutton: {
