@@ -21,6 +21,7 @@ class ProjectIntro extends React.Component {
               This VR website has four surfaces, including two cylinder surface, two flat surfaces, gallery function and used VrButton to achieve user interaction with external links.
             </Text>
             <Text style={styles.introText}>Built with React 360</Text>
+            <Text style={styles.introTextJoke}>Note: please do not peek at the bottom or top.</Text>
           </View>
           <VrButton style={styles.backlink} onClick={e =>{NativeModules.CustomLinkModule.openInNewTab('https://ellaqi.com/')}}>
             <View style={styles.linkView}>
@@ -40,6 +41,11 @@ class ProjectIntro extends React.Component {
     introText: {
       fontSize: 24,
       padding: 15,
+    },
+    introTextJoke: {
+      fontSize: 24,
+      padding: 15,
+      color: '#fbb216',
     },
     backLinkText: {
       color: '#FFFFFF',

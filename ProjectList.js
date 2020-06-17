@@ -32,6 +32,7 @@ class ProjectList extends React.Component {
                 <View style={styles.projectTextView}>
                   <VrButton onClick={this.showIntroPanel}>
                     <Text style={styles.projectText}>Q.E.Clock</Text> 
+                    <Text style={styles.projectTechnic}>Vue, HTML5, CSS3, NASA API</Text> 
                   </VrButton>
                 </View>
               </View>
@@ -45,6 +46,7 @@ class ProjectList extends React.Component {
                 </VrButton>
                 <View style={styles.projectTextView}>
                   <Text style={styles.projectText}>Q.E.Recipe</Text>
+                  <Text style={styles.projectTechnic}>Recipe, weather, music API project</Text> 
                 </View>
               </View>
               {/* box for each project */}
@@ -57,6 +59,7 @@ class ProjectList extends React.Component {
                   </VrButton>
                   <View style={styles.projectTextView}>
                     <Text style={styles.projectText}>Run Pokemon!</Text>
+                    <Text style={styles.projectTechnic}>jQuery, HTML5, CSS3, buit from scratch</Text> 
                   </View>
                 </View>
              </View>
@@ -72,6 +75,7 @@ class ProjectList extends React.Component {
                 </VrButton>
                 <View style={styles.projectTextView}>
                   <Text style={styles.projectText}>TicketDodger</Text>
+                  <Text style={styles.projectTechnic}>JavaScript, CSS3, HTML5, Python, Tensorflow</Text> 
                 </View>
               </View>
   
@@ -84,6 +88,7 @@ class ProjectList extends React.Component {
                 </VrButton>
                 <View style={styles.projectTextView}>
                   <Text style={styles.projectText}>Pompeii BBQ Restaurant</Text>
+                  <Text style={styles.projectTechnic}>jQuery, HTML5, CSS3, buit from scratch</Text> 
                 </View>
               </View>
   
@@ -96,6 +101,7 @@ class ProjectList extends React.Component {
                 </VrButton>
                 <View style={styles.projectTextView}>
                   <Text style={styles.projectText}>BerryTeam</Text>
+                  <Text style={styles.projectTechnic}>PHP, HTML5, CSS3, Bootstrap</Text> 
                 </View>
               </View>
             </View>
@@ -136,6 +142,12 @@ leftpanel: {
     },
     projectText: {
       fontSize: 24,
+      textAlign: 'center',
+      color: '#caf0f8',
+      fontWeight: 'bold',
+    },
+    projectTechnic: {
+      fontSize: 14,
       textAlign: 'center',
       color: '#caf0f8',
       fontWeight: 'bold',

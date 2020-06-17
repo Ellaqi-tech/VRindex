@@ -65,6 +65,35 @@ function init(bundle, parent, options = {}) {
     projectIntroPanel,
   )
 
+  const BottomPanel = new Surface(
+    500,
+    500,
+    Surface.SurfaceShape.Flat
+  );
+  BottomPanel.setAngle(
+    Math.PI / 1, /* yaw angle */
+    -Math.PI / 2, /* pitch angle */
+  );
+  r360.renderToSurface(
+    r360.createRoot('BottomPanel'),
+    BottomPanel,
+  )
+
+//TopPanel
+  const TopPanel = new Surface(
+    500,
+    500,
+    Surface.SurfaceShape.Flat
+  );
+  TopPanel.setAngle(
+    Math.PI / 1, /* yaw angle */
+    Math.PI / 2, /* pitch angle */
+  );
+  r360.renderToSurface(
+    r360.createRoot('TopPanel'),
+    TopPanel,
+  )
+
   r360.renderToSurface(
     r360.createRoot('GreetingPanel', { /* initial props */ }),
     r360.getDefaultSurface()
